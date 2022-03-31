@@ -1,0 +1,36 @@
+:root {
+  --bgColor: #2d3047;
+  --bgColorAlt: #048a81;
+  --mainColor: #f0f8ff;
+}
+body {
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  /* Created with https://www.css-gradient.com */
+  background: var(--bgColor);
+  background: -webkit-linear-gradient(
+    bottom,
+    var(--bgColor),
+    var(--bgColorAlt)
+  );
+  background: -moz-linear-gradient(bottom, var(--bgColor), var(--bgColorAlt));
+  background: linear-gradient(to top, var(--bgColor), var(--bgColorAlt));
+  color: var(--mainColor);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.centered {
+  border: 1px solid var(--mainColor);
+  border-radius: 5px;
+  padding: 2em;
+  min-width: 50%;
+}
